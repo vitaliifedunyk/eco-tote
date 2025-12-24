@@ -8,28 +8,6 @@ body {
   background-color: var(--color-background);
 }
 
-/* @layer components {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 320px;
-    padding-left: 16px;
-    padding-right: 16px;
-
-    @media (min-width: 768px) and (max-width: 1439px) {
-      max-width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-
-    @media (min-width: 1440px) {
-      max-width: 1440px;
-      padding-left: 64px;
-      padding-right: 64px;
-    }
-  }
-} */
-
 @theme {
   --font-fira-sans: 'Fira Sans', sans-serif;
   --font-comfortaa: 'Comfortaa', sans-serif;
@@ -58,4 +36,20 @@ body {
   --color-primary-dark-40: rgba(3, 10, 6, 0.4);
   --color-black-20: rgba(0, 0, 0, 0.2);
   --color-black-40: rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  padding: 0 16px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding: 0 64px;
+  }
 }

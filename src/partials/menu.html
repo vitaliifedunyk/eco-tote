@@ -1,36 +1,41 @@
-<div class="menu" data-menu>
-  <div class="menu-container">
-    <a href="/index.html" class="menu-logo">
-      <img src="/img/logo.svg" alt="EcoTote Logo" width="84" height="36" />
+<div class="fixed t-0 l-0 w-full h-full bg-primary-green-light z-999 opacity-0 invisible pointer-events-none transition-all duration-250ms ease-in-out is-open:opacity-1 is-open:visible is-open:pointer-events-auto 
+  xl:hidden" data-menu>
+  <div class="w-full h-full py-[20px] px-[14px] flex flex-col overflow-y-auto 
+  md:px-[32px]">
+    <a href="/index.html" class="flex items-center w-[320px] transition-all duration-250ms ease-in-out 
+    md:mb-[40px]">
+      <img class="w-[84px] h-[36px] block" src="/img/logo.svg" alt="EcoTote Logo" width="84" height="36" />
     </a>
 
-    <button
-      type="button"
-      class="menu-close"
-      aria-label="Закрити меню"
-      data-menu-close
-    >
-      <svg class="menu-close-icon" width="32" height="32">
+    <button type="button" class="absolute t-[24px] r-[28px] flex items-center justify-center bg-transparent border-0 cursor-pointer transition-all duration-250ms ease-in-out 
+    md:t-[26px] md:r-[36px]" aria-label="Закрити меню" data-menu-close>
+      <svg class="block w-[15px] h-[15px]" width="32" height="32">
         <use href="/img/icons.svg#icon-close"></use>
       </svg>
     </button>
 
-    <nav class="menu-nav">
-      <a href="#about" class="menu-nav-link">Про нас</a>
-      <a href="#advantages-of-bags" class="menu-nav-link">Переваги</a>
-      <a href="#assortment" class="menu-nav-link">Асортимент</a>
-      <a href="#gallery" class="menu-nav-link">Галерея</a>
-      <a href="#feedbacks" class="menu-nav-link">Відгуки</a>
-      <a href="#support" class="menu-nav-link">Контакти</a>
+    <nav class="flex flex-col px-[32px] gap-[32px]">
+      <a href="#about" class="font-fira-sans text-base font-normal leading-6 text-primary-dark no-underline transition-all duration-250ms ease-in-out 
+        xl:hover:underline xl:focus:underline xl:active:underline xl:active:text-primary-green">Про
+        нас</a>
+      <a href="#advantages-of-bags" class="font-fira-sans text-base font-normal leading-6 text-primary-dark no-underline transition-all duration-250ms ease-in-out 
+        xl:hover:underline xl:focus:underline xl:active:underline xl:active:text-primary-green">Переваги</a>
+      <a href="#assortment" class="font-fira-sans text-base font-normal leading-6 text-primary-dark no-underline transition-all duration-250ms ease-in-out 
+        xl:hover:underline xl:focus:underline xl:active:underline xl:active:text-primary-green">Асортимент</a>
+      <a href="#gallery" class="font-fira-sans text-base font-normal leading-6 text-primary-dark no-underline transition-all duration-250ms ease-in-out 
+        xl:hover:underline xl:focus:underline xl:active:underline xl:active:text-primary-green">Галерея</a>
+      <a href="#feedbacks" class="font-fira-sans text-base font-normal leading-6 text-primary-dark no-underline transition-all duration-250ms ease-in-out 
+        xl:hover:underline xl:focus:underline xl:active:underline xl:active:text-primary-green">Відгуки</a>
+      <a href="#support" class="font-fira-sans text-base font-normal leading-6 text-primary-dark no-underline transition-all duration-250ms ease-in-out 
+        xl:hover:underline xl:focus:underline xl:active:underline xl:active:text-primary-green">Контакти</a>
     </nav>
 
-    <address class="menu-contact">
-      <a href="tel:+380999091122" class="menu-contact-link"
-        >+38 (099) 909 11 22</a
-      >
-      <a href="mailto:hello@ecotote.com" class="menu-contact-link"
-        >hello@ecotote.com</a
-      >
+    <address class="flex flex-col gap-[16px] mt-auto mb-[14px]">
+      <a href="tel:+380999091122" class="font-fira-sans text-base not-italic font-normal leading-6 text-primary-dark no-underline transition-all duration-250ms ease-in-out 
+        xl:hover:underline xl:focus:underline xl:active:underline xl:active:text-primary-green">+38
+        (099) 909 11 22</a>
+      <a href="mailto:hello@ecotote.com" class="font-fira-sans text-base not-italic font-normal leading-6 text-primary-dark no-underline transition-all duration-250ms ease-in-out 
+        xl:hover:underline xl:focus:underline xl:active:underline xl:active:text-primary-green">hello@ecotote.com</a>
     </address>
   </div>
 </div>
