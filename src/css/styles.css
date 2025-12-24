@@ -1,15 +1,61 @@
-/* Common styles */
-@import url('./base.css');
-@import url('./container.css');
+@import 'tailwindcss';
 
-/* Sections style */
-@import url('./header.css');
-@import url('./menu.css');
-@import url('./hero.css');
-@import url('./about.css');
-@import url('./advantages.css');
-@import url('./assortment.css');
-@import url('./gallery.css');
-@import url('./feedbacks.css');
-@import url('./support.css');
-@import url('./footer.css');
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+/* @layer components {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media (min-width: 768px) and (max-width: 1439px) {
+      max-width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: 1440px;
+      padding-left: 64px;
+      padding-right: 64px;
+    }
+  }
+} */
+
+@theme {
+  --font-fira-sans: 'Fira Sans', sans-serif;
+  --font-comfortaa: 'Comfortaa', sans-serif;
+
+  /* Primary Colors */
+  --color-primary-dark: #030a06;
+  --color-primary-green: #3ac04c;
+  --color-primary-green-dark: #113916;
+  --color-primary-green-light: #75d281;
+  --color-background: #ebf8ed;
+
+  /* Status Colors */
+  --color-success: #4caf50;
+  --color-error: #d64040;
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-text-primary: #030a06;
+  --color-disabled-bg: #dcdcdc;
+  --color-disabled-text: #999;
+
+  /* Opacity Variants */
+  --color-primary-dark-15: rgba(3, 10, 6, 0.15);
+  --color-primary-dark-05: rgba(3, 10, 6, 0.05);
+  --color-primary-dark-60: rgba(3, 10, 6, 0.6);
+  --color-primary-dark-40: rgba(3, 10, 6, 0.4);
+  --color-black-20: rgba(0, 0, 0, 0.2);
+  --color-black-40: rgba(0, 0, 0, 0.4);
+}
