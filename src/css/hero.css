@@ -1,3 +1,19 @@
+/* Hero section styles */
+
+.hero {
+  padding: 64px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+}
 .hero-text {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
@@ -50,6 +66,22 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    padding: 32px 0px 64px 0px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    width: 340px;
+    margin-right: 24px;
+    margin-bottom: 0px;
+  }
+
   .hero-text {
     font-size: 18px;
     width: 340px;
@@ -62,6 +94,12 @@
     margin-bottom: 0px;
   }
 
+  .hero-content-buy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .hero-image {
     width: 704px;
     height: 267px;
@@ -69,6 +107,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .hero {
+    padding: 32px 0px 64px 0px;
+  }
+
   .hero-title {
     min-width: 640px;
     font-size: 56px;

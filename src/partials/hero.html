@@ -8,17 +8,22 @@ md:pt-[32px] md:pb-[64px]">
         шкодить планеті.</h1>
 
       <div class="md:flex md:flex-col md:items-start">
-        <p class="font-fira-sans text-base font-normal leading-6 text-primary-dark mb-[24px]">
+        <p class="font-fira-sans text-base font-normal leading-6 text-primary-dark mb-[24px]
+        md:mb-[32px] md:w-[340px] md:text-[18px]
+        xl:w-[640px]
+        ">
           Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль та
           відповідальність разом з EcoTote.
         </p>
-        <a href="#assortment" class="hero-button" role="button" aria-label="Купити зараз">
+        <a href="#assortment" class="font-fira-sans font-normal text-base leading-6 text-white flex items-center justify-center flex-row border border-primary-dark rounded-[6px] w-[288px] h-[50px] bg-primary-dark mb-[24px] transition-all duration-250ms ease-in-out hover:opacity-50 focus:opacity-50 active:opacity-60 active:border-primary-green-dark active:bg-primary-green-dark
+        md:w-[148px] md:h-[50px] md:mb-0
+        " role="button" aria-label="Купити зараз">
           Купити зараз
         </a>
       </div>
     </div>
 
-    <div class="hero-image-block">
+    <div>
       <picture>
         <source media="(min-width: 1440px)" srcset="
             /img/hero/desktop/hero.webp    1x,
@@ -28,10 +33,13 @@ md:pt-[32px] md:pb-[64px]">
             /img/hero/tablet/hero.webp    1x,
             /img/hero/tablet/hero@2x.webp 2x
           " />
-        <img fetchpriority="high" class="hero-image" src="/img/hero/mobile/hero.webp" srcset="
+        <img fetchpriority="high" class="rounded-[40px] w-full h-auto
+        md:w-[704px] md:h-[267px]
+        xl:w-[1312px] xl:h-[498px]
+        " src="/img/hero/mobile/hero.webp" srcset="
             /img/hero/mobile/hero.webp    1x,
             /img/hero/mobile/hero@2x.webp 2x
-          " alt="Екологічна сумка EcoTote" width="288" height="285" />
+          " alt="Екологічна сумка EcoTote" />
       </picture>
     </div>
   </div>
