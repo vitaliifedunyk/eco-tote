@@ -17,14 +17,16 @@ logoLinks.forEach(logo => {
 // Функція для закриття меню
 const closeMenu = () => {
   if (menu) {
-    menu.classList.remove('is-open');
+    menu.classList.remove('opacity-100', 'visible', 'pointer-events-auto');
+    menu.classList.add('opacity-0', 'invisible', 'pointer-events-none');
     document.body.style.overflow = '';
   }
 };
 
 if (menuOpenBtn && menu) {
   menuOpenBtn.addEventListener('click', () => {
-    menu.classList.add('is-open');
+    menu.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+    menu.classList.add('opacity-100', 'visible', 'pointer-events-auto');
     document.body.style.overflow = 'hidden';
   });
 }

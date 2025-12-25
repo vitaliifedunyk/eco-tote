@@ -49,7 +49,7 @@ body {
   --breakpoint-desktop: 1440px;
 }
 
-/* container styles */
+/* #region container */
 @layer components {
   .container {
     @apply mx-auto max-w-[320px] px-4;
@@ -67,8 +67,38 @@ body {
     }
   }
 }
+/* #endregion container */
 
-/* about styles */
+/* #region gallery */
+@layer components {
+  .gallery-grid {
+    grid-template-areas:
+      'one'
+      'two'
+      'three'
+      'four';
+  }
+
+  @media (min-width: 768px) {
+    .gallery-grid {
+      grid-template-areas:
+        'four two'
+        'three two'
+        'three one';
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .gallery-grid {
+      grid-template-areas:
+        'four two three'
+        'one two three';
+    }
+  }
+}
+/* #endregion gallery */
+
+/* #region  About styles */
 .about {
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%),
@@ -99,7 +129,9 @@ body {
   }
 }
 
-/* Retina display support */
+/* #endregion  About styles */
+
+/* #region Retina display support */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
@@ -137,3 +169,4 @@ body {
     }
   }
 }
+/* #endregion Retina display support */

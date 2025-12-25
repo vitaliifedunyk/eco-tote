@@ -1,78 +1,121 @@
-<section id="gallery" class="gallery">
+<section id="gallery" class="py-[32px] tablet:py-[64px]">
   <div class="container">
-    <h2 class="gallery-title">Галерея зображень</h2>
-    <p class="gallery-subtitle">EcoTotes у повсякденному житті</p>
 
-    <ul class="gallery-list">
-      <li class="gallery-item-one ">
+    <h2 class="font-comfortaa font-bold text-4xl leading-[1.2] tracking-[0.01em] mb-[16px] text-primary-dark text-center
+      tablet:text-[36px] tablet:mb-[24px]
+      desktop:text-[48px]">
+      Галерея зображень
+    </h2>
+
+    <p class="font-fira-sans text-[18px] font-normal leading-[1.6] text-primary-dark text-center mb-[32px]">EcoTotes у
+      повсякденному житті
+    </p>
+
+    <ul class="w-[288px] mx-auto grid grid-cols-[288px] gap-[16px] gallery-grid
+        tablet:w-[704px] tablet:grid-cols-[340px_340px] tablet:gap-[24px]
+        desktop:w-[1312px] desktop:grid-cols-[420px_420px_420px_420px] desktop:gap-[24px]">
+
+      <li class="[grid-area:one] rounded-[32px] overflow-hidden">
         <picture>
+
           <source media="(min-width: 1440px)" srcset="
               /img/gallery/desktop/gallery-1.webp    1x,
               /img/gallery/desktop/gallery-1@2x.webp 2x
             " />
+
           <source media="(min-width: 768px)" srcset="
               /img/gallery/tablet/gallery-1.webp    1x,
               /img/gallery/tablet/gallery-1@2x.webp 2x
             " />
+
           <source media="(max-width: 767px)" srcset="
               /img/gallery/mobile/gallery-1.webp    1x,
               /img/gallery/mobile/gallery-1@2x.webp 2x
             " />
-          <img src="/img/gallery/desktop/gallery-1.webp" alt="An eco tote placed on a chair" width="421" height="421" />
+
+          <img class="w-[288px] h-[288px] object-cover
+          tablet:w-[340px] tablet:h-[340px]
+          desktop:w-[420px] desktop:h-[420px]
+          " src="/img/gallery/desktop/gallery-1.webp" alt="An eco tote placed on a chair" />
+
         </picture>
       </li>
 
-      <li class="gallery-item-two ">
+      <li class="[grid-area:two] rounded-[32px] overflow-hidden">
         <picture>
+
           <source media="(min-width: 1440px)" srcset="
               /img/gallery/desktop/gallery-2.webp    1x,
               /img/gallery/desktop/gallery-2@2x.webp 2x
             " />
+
           <source media="(min-width: 768px)" srcset="
               /img/gallery/tablet/gallery-2.webp    1x,
               /img/gallery/tablet/gallery-2@2x.webp 2x
             " />
+
           <source media="(max-width: 767px)" srcset="
               /img/gallery/mobile/gallery-2.webp    1x,
               /img/gallery/mobile/gallery-2@2x.webp 2x
             " />
-          <img src="/img/gallery/desktop/gallery-2.webp" alt="A city scene" width="421" height="865" />
+
+          <img class="w-[288px] h-[288px] object-cover
+          tablet:w-[340px] tablet:h-[700px]
+          desktop:w-[420px] desktop:h-[865px]
+          " src="/img/gallery/desktop/gallery-2.webp" alt="A city scene" />
+
         </picture>
       </li>
 
-      <li class="gallery-item-three ">
+      <li class="[grid-area:three] rounded-[32px] overflow-hidden">
         <picture>
+
           <source media="(min-width: 1440px)" srcset="
               /img/gallery/desktop/gallery-3.webp    1x,
               /img/gallery/desktop/gallery-3@2x.webp 2x
             " />
+
           <source media="(min-width: 768px)" srcset="
               /img/gallery/tablet/gallery-3.webp    1x,
               /img/gallery/tablet/gallery-3@2x.webp 2x
             " />
+
           <source media="(max-width: 767px)" srcset="
               /img/gallery/mobile/gallery-3.webp    1x,
               /img/gallery/mobile/gallery-3@2x.webp 2x
             " />
-          <img src="/img/gallery/desktop/gallery-3.webp" alt="A person walking" width="421" height="865" />
+
+          <img class="w-[288px] h-[288px] object-cover
+          tablet:w-[340px] tablet:h-[700px]
+          desktop:w-[420px] desktop:h-[865px]
+          " src="/img/gallery/desktop/gallery-3.webp" alt="A person walking" />
+
         </picture>
       </li>
 
-      <li class="gallery-item-four ">
+      <li class="[grid-area:four] rounded-[32px] overflow-hidden">
         <picture>
+
           <source media="(min-width: 1440px)" srcset="
               /img/gallery/desktop/gallery-4.webp    1x,
               /img/gallery/desktop/gallery-4@2x.webp 2x
             " />
+
           <source media="(min-width: 768px)" srcset="
               /img/gallery/tablet/gallery-4.webp    1x,
               /img/gallery/tablet/gallery-4@2x.webp 2x
             " />
+
           <source media="(max-width: 767px)" srcset="
               /img/gallery/mobile/gallery-4.webp    1x,
               /img/gallery/mobile/gallery-4@2x.webp 2x
             " />
-          <img src="/img/gallery/desktop/gallery-4.webp" alt="A young woman" width="421" height="421" />
+
+          <img class="w-[288px] h-[288px] object-cover
+          tablet:w-[340px] tablet:h-[340px]
+          desktop:w-[420px] desktop:h-[420px]
+          " src="/img/gallery/desktop/gallery-4.webp" alt="A young woman" />
+
         </picture>
       </li>
     </ul>
