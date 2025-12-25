@@ -36,20 +36,104 @@ body {
   --color-primary-dark-40: rgba(3, 10, 6, 0.4);
   --color-black-20: rgba(0, 0, 0, 0.2);
   --color-black-40: rgba(0, 0, 0, 0.4);
+
+  /* Delete standard breakpoints */
+  --breakpoint-sm: initial;
+  --breakpoint-md: initial;
+  --breakpoint-lg: initial;
+  --breakpoint-xl: initial;
+  --breakpoint-2xl: initial;
+
+  /* Add our own */
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1440px;
 }
 
-.container {
-  padding: 0 16px;
-}
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
+/* container styles */
+@layer components {
   .container {
-    padding: 0 32px;
+    @apply mx-auto max-w-[320px] px-4;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      @apply max-w-[768px] px-8;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container {
+      @apply max-w-[1440px] px-16;
+    }
   }
 }
-/* Styles for Desktop devices */
+
+/* about styles */
+.about {
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url('../img/about/mobile/about.webp');
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url('../img/about/tablet/about.webp');
+  }
+}
+
 @media only screen and (min-width: 1440px) {
-  .container {
-    padding: 0 64px;
+  .about {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url('../img/about/desktop/about.webp');
+  }
+}
+
+/* Retina display support */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .about {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url('../img/about/mobile/about@2x.webp');
+  }
+
+  @media only screen and (min-width: 768px) {
+    .about {
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url('../img/about/tablet/about@2x.webp');
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .about {
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url('../img/about/desktop/about@2x.webp');
+    }
   }
 }
