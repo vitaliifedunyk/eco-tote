@@ -98,11 +98,15 @@ body {
 }
 /* #endregion gallery */
 
-/* #region  About styles */
+/* #region  background images styles */
 .about {
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%),
     url('../img/about/mobile/about.webp');
+}
+
+.support-image {
+  background-image: url('/img/support/mobile/support.webp');
 }
 
 @media only screen and (min-width: 768px) {
@@ -114,6 +118,10 @@ body {
         rgba(0, 0, 0, 0.2) 100%
       ),
       url('../img/about/tablet/about.webp');
+  }
+
+  .support-image {
+    background-image: url('/img/support/tablet/support.webp');
   }
 }
 
@@ -127,9 +135,13 @@ body {
       ),
       url('../img/about/desktop/about.webp');
   }
+
+  .support-image {
+    background-image: url('/img/support/desktop/support.webp');
+  }
 }
 
-/* #endregion  About styles */
+/* #endregion  background images styles */
 
 /* #region Retina display support */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -145,6 +157,10 @@ body {
       url('../img/about/mobile/about@2x.webp');
   }
 
+  .support-image {
+    background-image: url('/img/support/mobile/support@2x.webp');
+  }
+
   @media only screen and (min-width: 768px) {
     .about {
       background-image:
@@ -154,6 +170,10 @@ body {
           rgba(0, 0, 0, 0.2) 100%
         ),
         url('../img/about/tablet/about@2x.webp');
+    }
+
+    .support-image {
+      background-image: url('/img/support/tablet/support@2x.webp');
     }
   }
 
@@ -167,6 +187,39 @@ body {
         ),
         url('../img/about/desktop/about@2x.webp');
     }
+
+    .support-image {
+      background-image: url('/img/support/desktop/support@2x.webp');
+    }
   }
 }
+
 /* #endregion Retina display support */
+
+/* #region support */
+
+.support-input:not(:placeholder-shown):valid {
+  border-color: #4caf50;
+}
+
+.support-input:not(:placeholder-shown):valid::placeholder {
+  color: rgba(3, 10, 6, 0.4);
+}
+
+.support-input:not(:placeholder-shown):invalid {
+  border-color: #d64040;
+}
+
+.support-input:not(:placeholder-shown):invalid::placeholder {
+  color: #d64040;
+}
+
+.support-input:not(:placeholder-shown):invalid ~ .support-error-invalid {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+}
+
+/* #endregion support */

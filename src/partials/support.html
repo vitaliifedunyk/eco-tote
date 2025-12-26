@@ -1,93 +1,77 @@
-<section id="support" class="support">
+<section id="support" class="py-[32px] tablet:py-[64px]">
+  <div class="container
+  tablet:flex tablet:flex-col tablet:gap-[24px]
+  desktop:flex-row desktop:gap-0">
 
-  <div class="container support-container">
+    <div class="flex flex-col gap-[32px]
+    desktop:mr-[24px]">
 
-    <div class="support-left">
+      <h2 class="font-comfortaa text-[36px] font-bold leading-[1.2] tracking-[0.01em] text-primary-dark mb-[24px]
+      tablet:w-[468px]
+      desktop:w-[644px] desktop:text-[48px]">
+        Залишились питання? Зв'яжіться з нами!
+      </h2>
 
-      <div class="support-info">
+      <h3 class="font-fira-sans font-normal text-[18px] leading-[1.6] text-primary-dark">Ми тут, щоб допомогти!
+      </h3>
 
-        <h2 class="support-title">Залишились питання? Зв'яжіться з нами!
-        </h2>
+      <form action="#" method="POST" class="flex flex-col gap-[24px]">
 
-        <h3 class="support-subtitle">Ми тут, щоб допомогти!
-        </h3>
+        <div class="flex flex-col relative">
 
-      </div>
-
-      <form action="#" method="POST" class="support-form">
-
-        <div class="support-field">
-
-          <label class="support-label" for="name">Ім'я
+          <label class="font-fira-sans font-normal text-[16px] leading-[1.6] text-primary-dark mb-[8px]" for="name">Ім'я
           </label>
 
           <input
-            class="support-input"
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Іван"
-            minlength="5"
-            maxlength="64"
-            required
-          />
+            class="support-input font-fira-sans w-full py-[8px] px-[12px] rounded-[6px] text-[16px] leading-[1.6] text-primary-dark border border-primary-dark-15 bg-primary-dark-05 transition-all duration-250ms ease-in-out focus:border-primary-dark focus:outline-none
+            placeholder:text-primary-dark-60 placeholder:font-fira-sans placeholder:font-normal placeholder:text-[16px] placeholder:leading-[1.6]"
+            type="text" id="name" name="name" placeholder="Іван" minlength="5" maxlength="64" required />
 
-          <p class="support-error support-error-invalid">Error text
+          <p
+            class="support-error-invalid font-fira-sans font-normal text-[12px] leading-[1.6] pl-0 mt-[4px] hidden text-error">
+            Error text
           </p>
-
-          <p class="support-error support-error-valid">Correct text
-          </p>
-
         </div>
 
-        <div class="support-field">
+        <div class="flex flex-col relative">
 
-          <label class="support-label" for="email">Електронна пошта
+          <label class="font-fira-sans font-normal text-[16px] leading-[1.6] text-primary-dark mb-[8px]"
+            for="email">Електронна пошта
           </label>
 
           <input
-            class="support-input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="hello@ecotote.com"
-            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-            required
-          />
+            class="support-input font-fira-sans w-full py-[8px] px-[12px] rounded-[6px] text-[16px] leading-[1.6] text-primary-dark border border-primary-dark-15 bg-primary-dark-05 transition-all duration-250ms ease-in-out focus:border-primary-dark focus:outline-none
+            placeholder:text-primary-dark-60 placeholder:font-fira-sans placeholder:font-normal placeholder:text-[16px] placeholder:leading-[1.6]"
+            type="email" id="email" name="email" placeholder="hello@ecotote.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
 
-          <p class="support-error support-error-invalid">Error text
+          <p
+            class="support-error-invalid font-fira-sans font-normal text-[12px] leading-[1.6] pl-0 mt-[4px] hidden text-error">
+            Error text
           </p>
-
-          <p class="support-error support-error-valid">Correct text
-          </p>
-
         </div>
 
-        <div class="support-field">
+        <div class="flex flex-col">
 
-          <label class="support-label" for="message">Повідомлення
+          <label class="font-fira-sans font-normal text-[16px] leading-[1.6] text-primary-dark mb-[8px]"
+            for="message">Повідомлення
           </label>
 
           <textarea
-            class="support-textarea"
-            id="message"
-            name="message"
-            maxlength="500"
-            placeholder="Введіть своє повідомлення..."
-          ></textarea>
-
+            class="font-fira-sans w-full h-[180px] p-[12px] rounded-[6px] text-[16px] leading-[1.6] resize-none text-primary-dark border border-primary-dark-15 bg-primary-dark-05 transition-all duration-250ms ease-in-out focus:border-primary-dark focus:outline-none
+            placeholder:text-primary-dark-60 placeholder:font-fira-sans placeholder:font-normal placeholder:text-[16px] placeholder:leading-[1.6]"
+            id="message" name="message" maxlength="500" placeholder="Введіть своє повідомлення..."></textarea>
         </div>
 
-        <button type="submit" class="support-button">Надіслати
+        <button type="submit"
+          class="w-[288px] h-[50px] font-fira-sans font-normal text-[16px] leading-[1.6] text-white bg-primary-dark py-[14px] px-[24px] rounded-[6px] transition-all duration-250ms ease-in-out hover:opacity-50 focus:opacity-50 active:opacity-60 active:bg-primary-green-dark">Надіслати
         </button>
-
       </form>
-
     </div>
 
-    <div class="support-image">
+    <div class="support-image block w-full h-[428px] mt-[24px] bg-cover bg-center bg-no-repeat
+    tablet:mt-0 tablet:h-[428px]
+    desktop:h-[767px] desktop:w-[644px]">
     </div>
-
   </div>
-
 </section>
