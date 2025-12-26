@@ -69,6 +69,18 @@ body {
 }
 /* #endregion container */
 
+/* #region custom fonts */
+@layer utilities {
+  .font-fira-sans {
+    font-family: var(--font-fira-sans);
+  }
+
+  .font-comfortaa {
+    font-family: var(--font-comfortaa);
+  }
+}
+/* #endregion custom fonts */
+
 /* #region gallery */
 @layer components {
   .gallery-grid {
