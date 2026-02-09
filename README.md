@@ -7,7 +7,7 @@ EcoTote is a personal rewrite of a completed GoIT group project, rebuilt with Ta
 It presents an eco-bag landing page with responsive sections, product cards, feedback, and a contact form.
 
 ## 🔗 Live Demo
-Live demo link is not explicitly provided in this repository.
+[Live demo link is not explicitly provided in this repository.](https://vitaliifedunyk.github.io/eco-tote/)
 
 ## 🧩 Features
 - Single-page layout assembled from HTML partials (`header`, `menu`, `hero`, `about`, `advantages`, `assortment`, `gallery`, `feedbacks`, `support`, `footer`).
